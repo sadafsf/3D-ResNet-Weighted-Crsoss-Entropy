@@ -1,13 +1,36 @@
-# 3D-ResNet-Weighted-Crsoss-Entropy-
-Predicting student engagement with 3D ResNet-18 and weighted cross-entropy loss
 
-The COVID-19 pandemic necessitated moving learning to an online environment.
-Automatically detecting students’ engagement in this virtual environment is crucial for
-improving the quality of student learning. Students’ engagement level can vary over time
-and space, and students show different stages of engagement in online learning. Therefore,
-we aim to detect engagement levels using videos of students. This paper presents
-an end-to-end deep learning classification model using a 3D Residual Network(ResNet).
-The 3D ResNet extracts spatial and temporal features from consecutive video frames.
-The model is trained on the DAiSEE dataset’s video frames. We compared our result
-with other methods validated on the DAiSEE dataset for engagement detection. Our
-proposed method outperformed some of the methods.
+# Predicting Student Engagement with 3D ResNet-18 and Weighted Cross-Entropy Loss
+
+This repository contains the code and methodologies from the paper **"Predicting Student Engagement with 3D ResNet-18 and Weighted Cross-Entropy Loss"**, presented at the 35th Canadian Conference on Artificial Intelligence. The study explores the detection of student engagement levels in online learning environments using deep learning.
+
+## Overview
+
+The COVID-19 pandemic significantly increased the adoption of online learning, making it critical to assess and enhance student engagement in virtual classrooms. This project uses videos from the **DAiSEE dataset** to classify student engagement into four levels: *very low*, *low*, *high*, and *very high*.
+
+We implemented a **3D ResNet-18 model** with weighted cross-entropy loss and a weighted random sampler to address class imbalance in the dataset. Our method achieved a classification accuracy of 51.82% on the four-class problem.
+
+## Features
+
+- **Dataset**: DAiSEE, a publicly available dataset with annotated videos of students in online learning.
+- **Deep Learning Model**: 3D ResNet-18 for spatiotemporal feature extraction.
+- **Class Imbalance Handling**: Weighted random sampling and weighted cross-entropy loss.
+- **Performance Comparison**: Benchmarked against state-of-the-art methods.
+
+## Key Results
+
+- **Accuracy**: 51.82% on the DAiSEE dataset.
+- Our model outperformed several baseline approaches but did not exceed the current state-of-the-art methods.
+
+## Repository Structure
+
+- `data/`: Scripts for dataset preprocessing and augmentation.
+- `model/`: Implementation of the 3D ResNet-18 architecture.
+- `training/`: Training scripts with support for weighted loss and sampling.
+- `results/`: Model evaluation metrics and confusion matrices.
+- `notebooks/`: Jupyter notebooks for analysis and visualization.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/student-engagement-resnet.git
