@@ -100,27 +100,4 @@ Key observations:
 - Validating the model on alternative datasets, such as VRESEE.
 - Exploring additional temporal downsampling techniques.
 
----
 
-
-### Main Folders
-- **`data/`**: Contains scripts for handling and preprocessing the dataset.
-  - `preprocess.py`: Prepares the DAiSEE dataset for training by normalizing, augmenting, and resizing videos.
-  - `augmentation.py`: Applies spatial and temporal data augmentations such as Gaussian blur, brightness adjustment, and contrast enhancement.
-
-- **`model/`**: Implements the 3D ResNet-18 architecture.
-  - `resnet3d.py`: Contains the implementation of the 3D ResNet-18 model, designed to extract spatial-temporal features from video frames.
-  - `loss.py`: Defines the weighted cross-entropy loss function to handle class imbalance effectively.
-
-- **`training/`**: Includes scripts for training and validating the model.
-  - `train.py`: Script to train the 3D ResNet-18 model. Incorporates weighted random sampling to balance batches.
-  - `validate.py`: Evaluates the model's performance on the validation set.
-  - `sampler.py`: Implements a custom weighted random sampler for handling imbalanced classes.
-
-- **`results/`**: Stores outputs from model evaluation.
-  - `confusion_matrix.png`: Visualization of the model's classification performance across engagement levels.
-  - `accuracy_comparison.png`: Comparison chart of model accuracy with other methods on the DAiSEE dataset.
-
-- **`notebooks/`**: Contains Jupyter notebooks for analysis and visualization.
-  - `exploration.ipynb`: Explores the DAiSEE dataset and visualizes class distributions.
-  - `visualization.ipynb`: Generates charts and graphs for evaluation metrics.
