@@ -1,7 +1,7 @@
 
 # Predicting Student Engagement with 3D ResNet-18 and Weighted Cross-Entropy Loss
 
-This repository contains the code and methodologies from the paper **"Predicting Student Engagement with 3D ResNet-18 and Weighted Cross-Entropy Loss"**, presented at the 35th Canadian Conference on Artificial Intelligence. The study explores detecting student engagement levels in online learning environments using deep learning.
+This repository contains the code and methodologies of project **"Predicting Student Engagement with 3D ResNet-18 and Weighted Cross-Entropy Loss"**. The study explores detecting student engagement levels in online learning environments using deep learning.
 
 ## Overview
 
